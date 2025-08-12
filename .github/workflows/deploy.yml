@@ -7,7 +7,7 @@ on:
 
 
 permissions: 
-    contents: read
+    contents: write
     pages: write
     id-token: write
 
@@ -23,8 +23,8 @@ jobs:
             - name: Setup Node.JS
             uses: actions/setup-node@v4
             with: npm i
-                node-version: 22
-                cache: npm
+             node-version: 22
+             cache: npm
 
             - name: Install dependescies
             run: npm ci
