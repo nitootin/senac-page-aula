@@ -18,22 +18,22 @@ jobs:
 
         steps:
             - name: Checkout repository
-            uses: actions/checkout@v4
+              uses: actions/checkout@v4
             
             - name: Setup Node.JS
-            uses: actions/setup-node@v4
-            with: npm i
-             node-version: 22
-             cache: npm
+              uses: actions/setup-node@v4
+              with: npm i
+              node-version: 22
+              cache: npm
 
             - name: Install dependescies
-            run: npm ci
+              run: npm ci
 
             - name: Build project
-            run: npm run build
+              run: npm run build
 
             - name: Deploy to GitHub Pages
-            uses: JamesIves/github-pages-deploy-action@v4
-            with: 
+              uses: JamesIves/github-pages-deploy-action@v4
+              with: 
                 branche: gh-pages
                 folder: dist
