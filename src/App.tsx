@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import imagemLegal from './img/teste.png'
 import './App.css'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <h1>Vite + React</h1>
       <h2>My fisrt page in github pages - phillip medeiros</h2>
       <h3>testo legal</h3>
-      <img src="./img/teste.png" alt="" />
+      <img src={imagemLegal} alt="Imagem Legal" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
